@@ -1,0 +1,15 @@
+{
+  "expo": {
+    "name": "HikDigital Mart",
+    "slug": "hikdigital-mart",
+    "version": "0.0.0",
+    "scheme": "hikdigital",
+    "orientation": "portrait",
+    "userInterfaceStyle": "automatic",
+    "newArchEnabled": true,
+    "ios": { "supportsTablet": true, "bundleIdentifier": "ke.co.securedigital.hikdigital" },
+    "android": { "package": "ke.co.securedigital.hikdigital" },
+    "plugins": ["expo-router", "expo-secure-store", "expo-font"],
+    "experiments": { "typedRoutes": true }
+  }
+}
