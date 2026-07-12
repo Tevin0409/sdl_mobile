@@ -14,8 +14,8 @@
   "dependencies": {
     "@clerk/clerk-expo": "^2.11.7",
     "@expo-google-fonts/space-grotesk": "^0.4.1",
-    "@hikdigital/backend": "file:../hikdigital-backend",
-    "@hikdigital/shared-ui": "file:../hikdigital-shared-ui",
+    "@hikdigital/backend": "git+ssh://git@github.com/Tevin0409/sdl_backend.git#development",
+    "@hikdigital/shared-ui": "git+ssh://git@github.com/Tevin0409/sdl_shared_ui.git#development",
     "convex": "^1.17.4",
     "expo": "^54",
     "expo-application": "~7.0.8",
