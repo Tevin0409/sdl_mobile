@@ -1,6 +1,6 @@
 # hikdigital-mobile — Expo app
 
-Companion shopping + technician app (Expo SDK 53, Expo Router, React 19). Clerk auth
+Companion shopping + technician app (Expo SDK 54, Expo Router, React 19). Clerk auth
 with a secure-store token cache; Convex subscriptions; NativeWind consuming the shared
 theme preset.
 
@@ -10,6 +10,7 @@ theme preset.
 "@hikdigital/backend":   "github:<org>/hikdigital-backend#main",   // Convex api
 "@hikdigital/shared-ui": "github:<org>/hikdigital-shared-ui#main"  // theme preset
 ```
+
 Local dev uses `file:../…` (already set). `metro.config.js` watches the sibling repos
 so linked source is picked up.
 
