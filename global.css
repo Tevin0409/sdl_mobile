@@ -1,3 +1,84 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* ==========================================================================
+   Native theme tokens. On the web these live in @hikdigital/shared-ui/theme.css,
+   but React Native has no CSS cascade, so NativeWind needs the same semantic
+   HSL channels defined here for `bg-primary`, `text-muted-foreground`, etc. to
+   resolve. Values mirror theme.css. Fonts map to native families (Space Grotesk
+   is loaded in app/_layout.tsx; body uses the system font).
+   ========================================================================== */
+@layer base {
+  :root {
+    --font-sans: System;
+    --font-display: SpaceGrotesk_700Bold;
+    --font-mono: Courier;
+
+    --background: 0 0% 100%;
+    --foreground: 220 14% 11%;
+    --card: 0 0% 100%;
+    --card-foreground: 220 14% 11%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 220 14% 11%;
+
+    --primary: 354 100% 43%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 220 14% 96%;
+    --secondary-foreground: 220 14% 11%;
+    --muted: 220 14% 96%;
+    --muted-foreground: 220 8% 46%;
+    --accent: 220 14% 96%;
+    --accent-foreground: 220 14% 11%;
+
+    --destructive: 354 100% 43%;
+    --destructive-foreground: 0 0% 100%;
+    --success: 152 76% 40%;
+    --success-foreground: 0 0% 100%;
+    --warning: 35 92% 50%;
+    --warning-foreground: 30 40% 12%;
+    --info: 217 96% 56%;
+    --info-foreground: 0 0% 100%;
+
+    --border: 220 13% 88%;
+    --input: 220 13% 88%;
+    --ring: 354 100% 43%;
+
+    --radius: 0.5rem;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --background: 220 18% 7%;
+      --foreground: 210 14% 92%;
+      --card: 220 16% 10%;
+      --card-foreground: 210 14% 92%;
+      --popover: 220 16% 10%;
+      --popover-foreground: 210 14% 92%;
+
+      --primary: 354 90% 55%;
+      --primary-foreground: 0 0% 100%;
+
+      --secondary: 220 14% 16%;
+      --secondary-foreground: 210 14% 92%;
+      --muted: 220 14% 16%;
+      --muted-foreground: 220 10% 62%;
+      --accent: 220 14% 18%;
+      --accent-foreground: 210 14% 92%;
+
+      --destructive: 354 90% 55%;
+      --destructive-foreground: 0 0% 100%;
+      --success: 152 60% 45%;
+      --success-foreground: 0 0% 100%;
+      --warning: 35 90% 55%;
+      --warning-foreground: 30 40% 10%;
+      --info: 217 90% 62%;
+      --info-foreground: 0 0% 100%;
+
+      --border: 220 14% 20%;
+      --input: 220 14% 22%;
+      --ring: 354 90% 55%;
+    }
+  }
+}
